@@ -1,0 +1,14 @@
+{
+  "name": "vsync",
+  "version": "0.0.1",
+  "description": "Website for syncing video files over a network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "reload": "^2.3.1"
+  }
+}
