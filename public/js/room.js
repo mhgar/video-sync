@@ -94,11 +94,15 @@ seekSlider.addEventListener("change", function () {
     socket.emit("seek", {"time": time});
 });
 
+seekSlider.addEventListener("input", function () {
+    const time = seekSlider.value * player.getDuration();
+    player.setTime(time);
+});
+
 // Recv seek
 socket.on("seek", function (payload) {
     player.setTime(payload.time);
 });
-
 
 function readTimeToSeek() {
     const duration = player.getDuration();

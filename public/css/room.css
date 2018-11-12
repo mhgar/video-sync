@@ -1,0 +1,67 @@
+.site {
+    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: : 0px;
+    padding-bottom: 0px;
+    
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    grid-template-rows: auto 30px;
+    grid-template-areas:
+        "player"
+        "controls";
+}
+
+.player {
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  grid-area: player;
+}
+
+.playerControls {
+  background-color: gray;
+  grid-area: controls;
+
+  display: grid;
+    grid-template-columns: 30px 30px 100px auto 100px;
+  grid-gap: 10px;
+}
+
+#play {
+    overflow: hidden;
+    max-width: 100%;
+    align-content: center;
+    grid-column: 0;
+}
+
+#pause {
+    overflow: hidden;
+    max-width: 100%;
+    align-content: center;
+    grid-column: 2;
+}
+
+#volume {
+    margin-left: 10px;
+    
+    max-width: 100%;
+    grid-column: 3;
+}
+
+#seek {
+    min-width: 100%;
+    max-width: 100%;
+    grid-column: 4;
+}
+
+#localFile {
+    grid-column: 5;
+}
